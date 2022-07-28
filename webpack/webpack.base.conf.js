@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:20:41
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 14:40:06
+ * @LastEditTime: 2022-07-28 15:54:10
  * @Description: 请填写简介
  */
 
@@ -26,19 +26,6 @@ const baseConfig = {
     clean: true, // 重构是否清空dist文件夹
     pathinfo: false, // 开启路径信息
   },
-  devServer: {
-    hot: true,
-    port: 3000,
-    host: "localhost",
-    open: true,
-    allowedHosts: "auto",
-    client: {
-      progress: true,
-      logging: "info",
-    },
-    historyApiFallback: true,
-    static: resolvePath("../dist"),
-  },
   module: {
     // 加载css
     rules: [
@@ -50,6 +37,7 @@ const baseConfig = {
       {
         test: /\.(m?js|jsx|tsx|ts)$/,
         exclude: /(node_modules)/,
+        include: resolvePath("../src"),
         use: {
           loader: "swc-loader",
         },
@@ -57,6 +45,7 @@ const baseConfig = {
       {
         // 支持所有图片
         test: /\.(png|jpg|gif|svg|jpeg)$/,
+        include: resolvePath("../src/assets"),
         type: "asset/resource",
       },
     ],
@@ -66,6 +55,8 @@ const baseConfig = {
     // 尝试按顺序解析这些后缀名。如果有多个文件有相同的名字，但后缀名不同，webpack 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
     // 请注意，以上这样使用 resolve.extensions 会 覆盖默认数组，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。然而你可以使用 '...' 访问默认拓展名：
     extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    mainFields: ["browser", "module", "main"],
+    modules: ["node_modules"],
     // 创建 import 或 require 的别名，来确保模块引入变得更简单
     alias: {
       "@": resolvePath("../src"), // 用'@'代替'../src'
@@ -84,9 +75,6 @@ const baseConfig = {
       chunkFilename: devMode ? "[id].css" : "[id].[contenthash].css",
     }),
   ],
-  // optimization: {
-  //   usedExports: true,
-  // },
 };
 
 module.exports = {
