@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:20:41
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 12:33:32
+ * @LastEditTime: 2022-07-28 13:44:13
  * @Description: 请填写简介
  */
 
@@ -27,7 +27,7 @@ const baseConfig = {
     pathinfo: false, // 开启路径信息
   },
   module: {
-    // 加载css, less
+    // 加载css
     rules: [
       {
         test: /\.css$/,

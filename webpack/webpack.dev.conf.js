@@ -2,19 +2,19 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:28:27
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 11:28:28
+ * @LastEditTime: 2022-07-28 13:44:43
  * @Description: 请填写简介
  */
 
-const { baseConfig, resolvePath } = require("./webpack.base.conf");
+const { baseConfig } = require("./webpack.base.conf");
 
-const { merge } = require('webpack-merge');
+const { merge } = require("webpack-merge");
 
 module.exports = merge(baseConfig, {
-  mode: 'development',
-  devtool: 'inline-source-map',
+  mode: "development",
+  devtool: "inline-source-map",
   cache: {
-    type: 'memory',
+    type: "memory",
     cacheUnaffected: true,
   },
   experiments: {
@@ -23,14 +23,14 @@ module.exports = merge(baseConfig, {
   devServer: {
     hot: true,
     port: 3000,
-    host: 'localhost',
+    host: "localhost",
     open: true,
-    allowedHosts: 'auto',
+    allowedHosts: "auto",
     client: {
       progress: true,
-      logging: 'info'
+      logging: "info",
     },
-    host: 'local-ip',
+    host: "local-ip",
     historyApiFallback: true,
   },
   stats: {
@@ -40,8 +40,8 @@ module.exports = merge(baseConfig, {
     nestedModulesSpace: 15,
     chunks: false,
     env: true,
-    errorDetails: 'auto',
+    errorDetails: "auto",
     hash: false,
-    publicPath: false 
-  }
-})
+    publicPath: false,
+  },
+});

@@ -6,7 +6,7 @@
  * @Description: 请填写简介
  */
 
-const { baseConfig, resolvePath } = require("./webpack.base.conf");
+const { baseConfig } = require("./webpack.base.conf");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 
 const { merge } = require("webpack-merge");
