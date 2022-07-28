@@ -27,6 +27,6 @@
   "scripts": {
     "build": "webpack --config ./webpack/webpack.prod.conf.js",
     "start": "webpack-dev-server --config ./webpack/webpack.dev.conf.js",
-    "serve": "webpack-dev-server serve --config ./webpack/webpack.prod.conf.js --open"
+    "serve": "webpack serve --config ./webpack/webpack.prod.conf.js --open"
   }
 }
