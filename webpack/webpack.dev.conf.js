@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:28:27
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 13:44:43
+ * @LastEditTime: 2022-07-28 14:40:01
  * @Description: 请填写简介
  */
 
@@ -19,19 +19,6 @@ module.exports = merge(baseConfig, {
   },
   experiments: {
     cacheUnaffected: true,
-  },
-  devServer: {
-    hot: true,
-    port: 3000,
-    host: "localhost",
-    open: true,
-    allowedHosts: "auto",
-    client: {
-      progress: true,
-      logging: "info",
-    },
-    host: "local-ip",
-    historyApiFallback: true,
   },
   stats: {
     colors: true,

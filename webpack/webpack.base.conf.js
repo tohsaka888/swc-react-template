@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:20:41
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 13:44:13
+ * @LastEditTime: 2022-07-28 14:40:06
  * @Description: 请填写简介
  */
 
@@ -25,6 +25,19 @@ const baseConfig = {
     filename: "[name].bundle.js", // 出口文件名
     clean: true, // 重构是否清空dist文件夹
     pathinfo: false, // 开启路径信息
+  },
+  devServer: {
+    hot: true,
+    port: 3000,
+    host: "localhost",
+    open: true,
+    allowedHosts: "auto",
+    client: {
+      progress: true,
+      logging: "info",
+    },
+    historyApiFallback: true,
+    static: resolvePath("../dist"),
   },
   module: {
     // 加载css
@@ -58,6 +71,8 @@ const baseConfig = {
       "@": resolvePath("../src"), // 用'@'代替'../src'
     },
   },
+  // [contenthash] substitution 将根据资源内容创建出唯一 hash。当资源内容发生变化时，[contenthash] 也会发生变化。
+  // [contenthash] 主要解决浏览器缓存问题
   plugins: [
     new HtmlWebpackPlugin({
       template: resolvePath("../public/index.html"),
