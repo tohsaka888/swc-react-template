@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:28:27
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 16:02:48
+ * @LastEditTime: 2022-07-28 16:31:06
  * @Description: 请填写简介
  */
 
@@ -15,7 +15,6 @@ module.exports = merge(baseConfig, {
   devtool: "eval-cheap-module-source-map",
   cache: {
     type: "memory",
-    cacheUnaffected: true,
   },
   devServer: {
     hot: true,
@@ -29,9 +28,6 @@ module.exports = merge(baseConfig, {
       logging: "info",
     },
     historyApiFallback: true
-  },
-  experiments: {
-    cacheUnaffected: true,
   },
   stats: {
     colors: true,

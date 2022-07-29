@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:20:41
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 15:54:10
+ * @LastEditTime: 2022-07-29 08:51:39
  * @Description: 请填写简介
  */
 
@@ -32,7 +32,21 @@ const baseConfig = {
       {
         test: /\.css$/,
         // 顺序不能错, css-loader 必须在 postcss-loader 和 less-loader 之前
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              modules: true,
+              sourceMap: true,
+              esModule: true,
+              modules: {
+                namedExport: true,
+              },
+            },
+          },
+          "postcss-loader",
+        ],
       },
       {
         test: /\.(m?js|jsx|tsx|ts)$/,
@@ -47,6 +61,20 @@ const baseConfig = {
         test: /\.(png|jpg|gif|svg|jpeg)$/,
         include: resolvePath("../src/assets"),
         type: "asset/resource",
+      },
+      // 加载字体
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+      // 处理csv tsv的文件,在使用d3时及其有用
+      {
+        test: /\.(csv|tsv)$/i,
+        use: ["csv-loader"],
+      },
+      {
+        test: /\.xml$/i,
+        use: ["xml-loader"],
       },
     ],
   },
