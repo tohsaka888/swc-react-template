@@ -45,6 +45,4 @@ jobs:
 
     - name: Install dependencies
       run: pnpm install
-    - run: pnpm start
     - run: pnpm build
-    - run: pnpm serve
