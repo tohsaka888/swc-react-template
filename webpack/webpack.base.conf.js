@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:20:41
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-29 08:51:39
+ * @LastEditTime: 2022-07-29 09:30:25
  * @Description: 请填写简介
  */
 
@@ -40,9 +40,6 @@ const baseConfig = {
               modules: true,
               sourceMap: true,
               esModule: true,
-              modules: {
-                namedExport: true,
-              },
             },
           },
           "postcss-loader",
@@ -82,7 +79,7 @@ const baseConfig = {
   resolve: {
     // 尝试按顺序解析这些后缀名。如果有多个文件有相同的名字，但后缀名不同，webpack 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
     // 请注意，以上这样使用 resolve.extensions 会 覆盖默认数组，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。然而你可以使用 '...' 访问默认拓展名：
-    extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".css", "..."],
     mainFields: ["browser", "module", "main"],
     modules: ["node_modules"],
     // 创建 import 或 require 的别名，来确保模块引入变得更简单
