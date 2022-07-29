@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:02:20
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 13:36:42
+ * @LastEditTime: 2022-07-29 11:03:05
  * @Description: README
 -->
 
@@ -14,7 +14,11 @@ use `swc` and `webpack5` to build the template for your react application.
 
 ## usage
 
-clone this repository
+### clone this repository
+
+```bash
+git clone https://github.com/tohsaka888/swc-react-template.git
+```
 
 ### download dependencies
 
@@ -22,12 +26,12 @@ clone this repository
 pnpm install
 ```
 
-### run `dev` server
+### run `dev server`
 
 ```bash
 pnpm start
 ```
- 
+
 ### build
 
 ```bash
