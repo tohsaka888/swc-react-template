@@ -2,7 +2,7 @@
  * @Author: tohsaka888
  * @Date: 2022-07-28 11:28:27
  * @LastEditors: tohsaka888
- * @LastEditTime: 2022-08-01 10:26:32
+ * @LastEditTime: 2022-07-28 16:31:06
  * @Description: 请填写简介
  */
 
@@ -18,7 +18,7 @@ module.exports = merge(baseConfig, {
   },
   devServer: {
     hot: true,
-    port: 3001,
+    port: 3000,
     host: "localhost",
     open: true,
     allowedHosts: "auto",
