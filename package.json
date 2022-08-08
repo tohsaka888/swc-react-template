@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@swc/cli": "0.1.57",
-    "@swc/core": "1.2.223",
+    "@swc/core": "1.2.224",
     "@swc/helpers": "0.4.3",
     "@types/react": "18.0.16",
     "@types/react-dom": "18.0.6",
