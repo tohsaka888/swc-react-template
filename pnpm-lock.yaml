@@ -4,7 +4,7 @@ specifiers:
   '@swc/cli': 0.1.57
   '@swc/core': 1.2.224
   '@swc/helpers': 0.4.6
-  '@types/react': 18.0.16
+  '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   autoprefixer: 10.4.7
   css-loader: 6.7.1
@@ -32,7 +32,7 @@ devDependencies:
   '@swc/cli': 0.1.57_@swc+core@1.2.224
   '@swc/core': 1.2.224
   '@swc/helpers': 0.4.6
-  '@types/react': 18.0.16
+  '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   autoprefixer: 10.4.7_postcss@8.4.16
   css-loader: 6.7.1_webpack@5.74.0
@@ -438,11 +438,11 @@ packages:
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
-      '@types/react': 18.0.16
+      '@types/react': 18.0.17
     dev: true
 
-  /@types/react/18.0.16:
-    resolution: {integrity: sha512-3vX1dzVucqc2nhXtzyaParTIIRZeNbisRqLE7QdeLomVybEyeiuAouzZXgz71P+2kbJOqj3dy0fzoATg2I06GQ==}
+  /@types/react/18.0.17:
+    resolution: {integrity: sha512-38ETy4tL+rn4uQQi7mB81G7V1g0u2ryquNmsVIOKUAEIDK+3CUjZ6rSRpdvS99dNBnkLFL83qfmtLacGOTIhwQ==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
