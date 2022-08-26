@@ -17,7 +17,7 @@ specifiers:
   react-dom: 18.2.0
   react-router-dom: 6.3.0
   swc-loader: 0.2.3
-  typescript: 4.7.4
+  typescript: 4.8.2
   webpack: 5.74.0
   webpack-cli: 4.10.0
   webpack-dev-server: 4.10.0
@@ -42,7 +42,7 @@ devDependencies:
   postcss: 8.4.16
   postcss-loader: 7.0.1_qjv4cptcpse3y5hrjkrbb7drda
   swc-loader: 0.2.3_rc7vb55buodhh3jrkjtk564yqy
-  typescript: 4.7.4
+  typescript: 4.8.2
   webpack: 5.74.0_yehohyx6xaauk3iqhl4rrxhnd4
   webpack-cli: 4.10.0_r5zkyi3k4cwcnn76n4wwxu6434
   webpack-dev-server: 4.10.0_5v66e2inugklgvlh4huuavolfq
@@ -3197,8 +3197,8 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /typescript/4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
+  /typescript/4.8.2:
+    resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
