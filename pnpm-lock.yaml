@@ -7,7 +7,7 @@ specifiers:
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   autoprefixer: 10.4.13
-  css-loader: 6.7.1
+  css-loader: 6.7.2
   css-minimizer-webpack-plugin: 4.2.2
   html-webpack-plugin: 5.5.0
   mini-css-extract-plugin: 2.6.1
@@ -35,7 +35,7 @@ devDependencies:
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   autoprefixer: 10.4.13_postcss@8.4.18
-  css-loader: 6.7.1_webpack@5.75.0
+  css-loader: 6.7.2_webpack@5.75.0
   css-minimizer-webpack-plugin: 4.2.2_webpack@5.75.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   mini-css-extract-plugin: 2.6.1_webpack@5.75.0
@@ -1046,8 +1046,8 @@ packages:
       postcss: 8.4.18
     dev: true
 
-  /css-loader/6.7.1_webpack@5.75.0:
-    resolution: {integrity: sha512-yB5CNFa14MbPJcomwNh3wLThtkZgcNyI2bNMRt8iE5Z8Vwl7f8vQXFAzn2HDOJvtDq2NTZBUGMSUNNyrv3/+cw==}
+  /css-loader/6.7.2_webpack@5.75.0:
+    resolution: {integrity: sha512-oqGbbVcBJkm8QwmnNzrFrWTnudnRZC+1eXikLJl0n4ljcfotgRifpg2a1lKy8jTrc4/d9A/ap1GFq1jDKG7J+Q==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.0.0
@@ -1059,7 +1059,7 @@ packages:
       postcss-modules-scope: 3.0.0_postcss@8.4.18
       postcss-modules-values: 4.0.0_postcss@8.4.18
       postcss-value-parser: 4.2.0
-      semver: 7.3.7
+      semver: 7.3.8
       webpack: 5.75.0_mpgwtum44z4hpjyfxp4bvyw25e
     dev: true
 
@@ -2918,6 +2918,14 @@ packages:
 
   /semver/7.3.7:
     resolution: {integrity: sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+
+  /semver/7.3.8:
+    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:

@@ -6,7 +6,7 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "autoprefixer": "10.4.13",
-    "css-loader": "6.7.1",
+    "css-loader": "6.7.2",
     "css-minimizer-webpack-plugin": "4.2.2",
     "html-webpack-plugin": "5.5.0",
     "mini-css-extract-plugin": "2.6.1",
