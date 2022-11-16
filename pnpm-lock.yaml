@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@swc/cli': 0.1.57
   '@swc/core': 1.3.15
-  '@swc/helpers': 0.4.12
+  '@swc/helpers': 0.4.13
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
   autoprefixer: 10.4.13
@@ -31,7 +31,7 @@ dependencies:
 devDependencies:
   '@swc/cli': 0.1.57_@swc+core@1.3.15
   '@swc/core': 1.3.15
-  '@swc/helpers': 0.4.12
+  '@swc/helpers': 0.4.13
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
   autoprefixer: 10.4.13_postcss@8.4.18
@@ -292,8 +292,8 @@ packages:
       '@swc/core-win32-x64-msvc': 1.3.15
     dev: true
 
-  /@swc/helpers/0.4.12:
-    resolution: {integrity: sha512-R6RmwS9Dld5lNvwKlPn62+piU+WDG1sMfsnfJioXCciyko/gZ0DQ4Mqglhq1iGU1nQ/RcGkAwfMH+elMSkJH3Q==}
+  /@swc/helpers/0.4.13:
+    resolution: {integrity: sha512-WOoZMSqpmUgL72xOeaWcU9IG7C6t5Wh1e8NGpSyBvmN5BSCXleK4/PLS6Oko1i/Lvn/yGYOv62bxlfsDvmRurg==}
     dependencies:
       tslib: 2.4.0
     dev: true
