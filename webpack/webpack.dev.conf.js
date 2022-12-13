@@ -1,33 +1,29 @@
-/*
- * @Author: tohsaka888
- * @Date: 2022-07-28 11:28:27
- * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 16:31:06
- * @Description: 请填写简介
- */
-
-const { baseConfig, resolvePath } = require("./webpack.base.conf");
-
+const { baseConfig } = require("./webpack.base.conf");
 const { merge } = require("webpack-merge");
+const { proxy } = require("../proxy.config");
 
 module.exports = merge(baseConfig, {
   mode: "development",
   devtool: "eval-cheap-module-source-map",
   cache: {
     type: "memory",
+    cacheUnaffected: true,
+    maxGenerations: 1,
   },
   devServer: {
     hot: true,
-    port: 3000,
-    host: "localhost",
+    port: "auto",
+    host: "local-ip",
     open: true,
     allowedHosts: "auto",
     compress: true,
+    magicHtml: true,
     client: {
       progress: true,
       logging: "info",
     },
-    historyApiFallback: true
+    proxy,
+    historyApiFallback: true,
   },
   stats: {
     colors: true,

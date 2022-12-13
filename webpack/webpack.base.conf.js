@@ -1,11 +1,3 @@
-/*
- * @Author: tohsaka888
- * @Date: 2022-07-28 11:20:41
- * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-29 09:30:25
- * @Description: 请填写简介
- */
-
 // 引入path,后续需要使用它将路径转换成绝对路径
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin"); // 自动生成html文件
@@ -22,15 +14,16 @@ const baseConfig = {
   entry: resolvePath("../src/index.tsx"), // 入口文件
   output: {
     path: resolvePath("../dist"), // 出口文件
-    filename: "[name].bundle.js", // 出口文件名
+    filename: "[name].[contenthash].bundle.js", // 出口文件名
     clean: true, // 重构是否清空dist文件夹
-    pathinfo: false, // 开启路径信息
+    pathinfo: true, // 开启路径信息
+    charset: true,
   },
   module: {
     // 加载css
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         // 顺序不能错, css-loader 必须在 postcss-loader 和 less-loader 之前
         use: [
           MiniCssExtractPlugin.loader,
@@ -45,8 +38,9 @@ const baseConfig = {
           "postcss-loader",
         ],
       },
+      // 使用swc编译js/ts文件
       {
-        test: /\.(m?js|jsx|tsx|ts)$/,
+        test: /\.(m?js|jsx|tsx|ts)$/i,
         exclude: /(node_modules)/,
         include: resolvePath("../src"),
         use: {
@@ -55,7 +49,7 @@ const baseConfig = {
       },
       {
         // 支持所有图片
-        test: /\.(png|jpg|gif|svg|jpeg)$/,
+        test: /\.(png|jpg|gif|svg|jpeg)$/i,
         include: resolvePath("../src/assets"),
         type: "asset/resource",
       },
@@ -79,7 +73,7 @@ const baseConfig = {
   resolve: {
     // 尝试按顺序解析这些后缀名。如果有多个文件有相同的名字，但后缀名不同，webpack 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
     // 请注意，以上这样使用 resolve.extensions 会 覆盖默认数组，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。然而你可以使用 '...' 访问默认拓展名：
-    extensions: [".tsx", ".ts", ".jsx", ".js", ".css", "..."],
+    extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
     mainFields: ["browser", "module", "main"],
     modules: ["node_modules"],
     // 创建 import 或 require 的别名，来确保模块引入变得更简单

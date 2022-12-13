@@ -1,11 +1,3 @@
-/*
- * @Author: tohsaka888
- * @Date: 2022-07-28 11:28:54
- * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-28 15:35:50
- * @Description: 请填写简介
- */
-
 const { baseConfig } = require("./webpack.base.conf");
 const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
 
@@ -13,6 +5,10 @@ const { merge } = require("webpack-merge");
 
 module.exports = merge(baseConfig, {
   mode: "production",
+  cache: false,
+  output: {
+    pathinfo: false,
+  },
   performance: {
     hints: false,
   },
@@ -27,7 +23,7 @@ module.exports = merge(baseConfig, {
       usedExports: true,
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom)[\\/]/,
+          test: /[\\/]node_modules[\\/]/,
           name: "vendor",
           chunks: "all",
           reuseExistingChunk: true,
