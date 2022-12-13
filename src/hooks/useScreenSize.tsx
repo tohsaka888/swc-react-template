@@ -1,12 +1,3 @@
-/*
- * @Author: tohsaka888
- * @Date: 2022-07-29 11:34:04
- * @LastEditors: tohsaka888
- * @LastEditTime: 2022-07-29 11:38:58
- * @Description: 请填写简介
- */
-
-
 import React, { useDeferredValue, useEffect, useState } from 'react'
 
 function useScreenSize(): { width: number; height: number } {
