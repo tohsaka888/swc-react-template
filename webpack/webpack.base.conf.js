@@ -2,6 +2,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin"); // 自动生成html文件
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // css单独文件
+const WebpackBar = require("webpackbar");
+const FriendlyErrorsWebpackPlugin = require("@nuxt/friendly-errors-webpack-plugin");
 
 const devMode = process.env.NODE_ENV !== "production"; // 判断是否为开发环境
 
@@ -69,6 +71,7 @@ const baseConfig = {
       },
     ],
   },
+  stats: "errors-only",
   // 配置模块如何解析
   resolve: {
     // 尝试按顺序解析这些后缀名。如果有多个文件有相同的名字，但后缀名不同，webpack 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
@@ -93,6 +96,12 @@ const baseConfig = {
       filename: devMode ? "[name].css" : "[name].[contenthash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[contenthash].css",
     }),
+    new WebpackBar({
+      color: "#1890ff", // 默认green，进度条颜色支持HEX
+      basic: false, // 默认true，启用一个简单的日志报告器
+      profile: false, // 默认false，启用探查器。
+    }),
+    new FriendlyErrorsWebpackPlugin(),
   ],
 };
 
