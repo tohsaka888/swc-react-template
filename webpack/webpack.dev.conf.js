@@ -4,7 +4,7 @@ const { proxy } = require("../proxy.config");
 
 module.exports = merge(baseConfig, {
   mode: "development",
-  devtool: "eval-cheap-module-source-map",
+  devtool: "inline-source-map",
   cache: {
     type: "memory",
     cacheUnaffected: true,
@@ -24,20 +24,6 @@ module.exports = merge(baseConfig, {
     },
     proxy,
     historyApiFallback: true,
-  },
-  stats: {
-    colors: true,
-    modules: false,
-    assets: false,
-    nestedModulesSpace: 15,
-    chunks: false,
-    env: true,
-    errorDetails: "auto",
-    hash: false,
-    publicPath: false,
-    moduleAssets: false,
-    runtimeModules: false,
-    dependentModules: false,
   },
   optimization: {
     usedExports: true,
