@@ -6,6 +6,7 @@ const { merge } = require("webpack-merge");
 module.exports = merge(baseConfig, {
   mode: "production",
   cache: false,
+  devtool: "source-map",
   output: {
     pathinfo: false,
   },
