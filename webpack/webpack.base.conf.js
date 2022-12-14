@@ -13,7 +13,7 @@ const resolvePath = (dir) => {
 };
 
 const baseConfig = {
-  entry: resolvePath("../src/index.tsx"), // 入口文件
+  entry: resolvePath("../src/index.jsx"), // 入口文件
   output: {
     path: resolvePath("../dist"), // 出口文件
     filename: "[name].[contenthash].bundle.js", // 出口文件名
@@ -40,9 +40,9 @@ const baseConfig = {
           "postcss-loader",
         ],
       },
-      // 使用swc编译js/ts文件
+      // 使用swc编译js文件
       {
-        test: /\.(m?js|jsx|tsx|ts)$/i,
+        test: /\.(m?js|jsx)$/i,
         exclude: /(node_modules)/,
         include: resolvePath("../src"),
         use: {
@@ -76,7 +76,7 @@ const baseConfig = {
   resolve: {
     // 尝试按顺序解析这些后缀名。如果有多个文件有相同的名字，但后缀名不同，webpack 会解析列在数组首位的后缀的文件 并跳过其余的后缀。
     // 请注意，以上这样使用 resolve.extensions 会 覆盖默认数组，这就意味着 webpack 将不再尝试使用默认扩展来解析模块。然而你可以使用 '...' 访问默认拓展名：
-    extensions: [".tsx", ".ts", ".jsx", ".js", "..."],
+    extensions: [".jsx", ".js", "..."],
     mainFields: ["browser", "module", "main"],
     modules: ["node_modules"],
     // 创建 import 或 require 的别名，来确保模块引入变得更简单
