@@ -1,7 +1,7 @@
 import React, { useDeferredValue, useEffect, useState } from 'react'
 
-function useScreenSize(): { width: number; height: number } {
-  const [screenSize, setScreenSize] = useState<{ width: number; height: number }>({
+function useScreenSize() {
+  const [screenSize, setScreenSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   })
