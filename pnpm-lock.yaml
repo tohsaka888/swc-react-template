@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxt/friendly-errors-webpack-plugin': ^2.5.2
-  '@swc/cli': 0.1.58
+  '@swc/cli': 0.1.59
   '@swc/core': 1.3.24
   '@swc/helpers': 0.4.14
   '@types/react': 18.0.26
@@ -32,7 +32,7 @@ dependencies:
 
 devDependencies:
   '@nuxt/friendly-errors-webpack-plugin': 2.5.2_webpack@5.75.0
-  '@swc/cli': 0.1.58_@swc+core@1.3.24
+  '@swc/cli': 0.1.59_@swc+core@1.3.24
   '@swc/core': 1.3.24
   '@swc/helpers': 0.4.14
   '@types/react': 18.0.26
@@ -188,11 +188,10 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /@swc/cli/0.1.58_@swc+core@1.3.24:
-    resolution: {integrity: sha512-6Wjxs783ni/O1tshHkof2g/L3uAJgfpo/bV0aeibCrRRHfaDTqw/bToY260Mu9T/1bewdb/yWW8IbW1nxUGihA==}
+  /@swc/cli/0.1.59_@swc+core@1.3.24:
+    resolution: {integrity: sha512-BlX3wIxYTwdtR22dIqZ3FEIOJPqnlByAp4JY46OMZi2UXMB3ZbOzefawD2ZlLafRUWyy5NtiZZty5waKzaYRnA==}
     engines: {node: '>= 12.13'}
     hasBin: true
-    requiresBuild: true
     peerDependencies:
       '@swc/core': ^1.2.66
       chokidar: ^3.5.1
