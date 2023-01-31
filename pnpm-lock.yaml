@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nuxt/friendly-errors-webpack-plugin': ^2.5.2
-  '@swc/cli': 0.1.59
+  '@swc/cli': 0.1.60
   '@swc/core': 1.3.30
   '@swc/helpers': 0.4.14
   '@types/react': 18.0.27
@@ -32,7 +32,7 @@ dependencies:
 
 devDependencies:
   '@nuxt/friendly-errors-webpack-plugin': 2.5.2_webpack@5.75.0
-  '@swc/cli': 0.1.59_@swc+core@1.3.30
+  '@swc/cli': 0.1.60_@swc+core@1.3.30
   '@swc/core': 1.3.30
   '@swc/helpers': 0.4.14
   '@types/react': 18.0.27
@@ -188,8 +188,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /@swc/cli/0.1.59_@swc+core@1.3.30:
-    resolution: {integrity: sha512-BlX3wIxYTwdtR22dIqZ3FEIOJPqnlByAp4JY46OMZi2UXMB3ZbOzefawD2ZlLafRUWyy5NtiZZty5waKzaYRnA==}
+  /@swc/cli/0.1.60_@swc+core@1.3.30:
+    resolution: {integrity: sha512-pgZyf0Hnz4O0UVmCeBdrcRtRrbm3nKdxecZCN/FXfO0kzcuPRAQP3WeFAuGi0YyUS3NWgKFmM6NO6t5wb8ROPQ==}
     engines: {node: '>= 12.13'}
     hasBin: true
     peerDependencies:
