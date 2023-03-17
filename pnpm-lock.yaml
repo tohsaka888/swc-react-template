@@ -11,7 +11,7 @@ specifiers:
   css-loader: 6.7.3
   css-minimizer-webpack-plugin: 4.2.2
   html-webpack-plugin: 5.5.0
-  mini-css-extract-plugin: 2.7.2
+  mini-css-extract-plugin: 2.7.5
   postcss: 8.4.21
   postcss-loader: 7.1.0
   react: 18.2.0
@@ -41,7 +41,7 @@ devDependencies:
   css-loader: 6.7.3_webpack@5.76.2
   css-minimizer-webpack-plugin: 4.2.2_webpack@5.76.2
   html-webpack-plugin: 5.5.0_webpack@5.76.2
-  mini-css-extract-plugin: 2.7.2_webpack@5.76.2
+  mini-css-extract-plugin: 2.7.5_webpack@5.76.2
   postcss: 8.4.21
   postcss-loader: 7.1.0_6puvukfnwbwq425eep7g4z27be
   swc-loader: 0.2.3_ex7w6zyod5g34vsycyaysups3i
@@ -2410,8 +2410,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /mini-css-extract-plugin/2.7.2_webpack@5.76.2:
-    resolution: {integrity: sha512-EdlUizq13o0Pd+uCp+WO/JpkLvHRVGt97RqfeGhXqAcorYo1ypJSpkV+WDT0vY/kmh/p7wRdJNJtuyK540PXDw==}
+  /mini-css-extract-plugin/2.7.5_webpack@5.76.2:
+    resolution: {integrity: sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.0.0
