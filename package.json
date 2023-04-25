@@ -12,7 +12,7 @@
     "html-webpack-plugin": "5.5.1",
     "mini-css-extract-plugin": "2.7.5",
     "postcss": "8.4.23",
-    "postcss-loader": "7.1.0",
+    "postcss-loader": "7.2.4",
     "swc-loader": "0.2.3",
     "typescript": "5.0.4",
     "webpack": "5.78.0",
