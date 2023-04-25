@@ -62,10 +62,10 @@ devDependencies:
     version: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
   webpack-cli:
     specifier: 5.0.2
-    version: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
+    version: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
   webpack-dev-server:
-    specifier: 4.13.1
-    version: 4.13.1(webpack-cli@5.0.2)(webpack@5.78.0)
+    specifier: 4.13.3
+    version: 4.13.3(webpack-cli@5.0.2)(webpack@5.78.0)
   webpack-merge:
     specifier: 5.8.0
     version: 5.8.0
@@ -679,7 +679,7 @@ packages:
       webpack-cli: 5.x.x
     dependencies:
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
-      webpack-cli: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
+      webpack-cli: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
     dev: true
 
   /@webpack-cli/info@2.0.1(webpack-cli@5.0.2)(webpack@5.78.0):
@@ -690,10 +690,10 @@ packages:
       webpack-cli: 5.x.x
     dependencies:
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
-      webpack-cli: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
+      webpack-cli: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
     dev: true
 
-  /@webpack-cli/serve@2.0.2(webpack-cli@5.0.2)(webpack-dev-server@4.13.1)(webpack@5.78.0):
+  /@webpack-cli/serve@2.0.2(webpack-cli@5.0.2)(webpack-dev-server@4.13.3)(webpack@5.78.0):
     resolution: {integrity: sha512-S9h3GmOmzUseyeFW3tYNnWS7gNUuwxZ3mmMq0JyW78Vx1SGKPSkt5bT4pB0rUnVfHjP0EL9gW2bOzmtiTfQt0A==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
@@ -705,8 +705,8 @@ packages:
         optional: true
     dependencies:
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
-      webpack-cli: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
-      webpack-dev-server: 4.13.1(webpack-cli@5.0.2)(webpack@5.78.0)
+      webpack-cli: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
+      webpack-dev-server: 4.13.3(webpack-cli@5.0.2)(webpack@5.78.0)
     dev: true
 
   /@xtuc/ieee754@1.2.0:
@@ -3903,7 +3903,7 @@ packages:
       minimalistic-assert: 1.0.1
     dev: true
 
-  /webpack-cli@5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0):
+  /webpack-cli@5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0):
     resolution: {integrity: sha512-4y3W5Dawri5+8dXm3+diW6Mn1Ya+Dei6eEVAdIduAmYNLzv1koKVAqsfgrrc9P2mhrYHQphx5htnGkcNwtubyQ==}
     engines: {node: '>=14.15.0'}
     hasBin: true
@@ -3923,7 +3923,7 @@ packages:
       '@discoveryjs/json-ext': 0.5.7
       '@webpack-cli/configtest': 2.0.1(webpack-cli@5.0.2)(webpack@5.78.0)
       '@webpack-cli/info': 2.0.1(webpack-cli@5.0.2)(webpack@5.78.0)
-      '@webpack-cli/serve': 2.0.2(webpack-cli@5.0.2)(webpack-dev-server@4.13.1)(webpack@5.78.0)
+      '@webpack-cli/serve': 2.0.2(webpack-cli@5.0.2)(webpack-dev-server@4.13.3)(webpack@5.78.0)
       colorette: 2.0.19
       commander: 10.0.1
       cross-spawn: 7.0.3
@@ -3933,7 +3933,7 @@ packages:
       interpret: 3.1.1
       rechoir: 0.8.0
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
-      webpack-dev-server: 4.13.1(webpack-cli@5.0.2)(webpack@5.78.0)
+      webpack-dev-server: 4.13.3(webpack-cli@5.0.2)(webpack@5.78.0)
       webpack-merge: 5.8.0
     dev: true
 
@@ -3951,8 +3951,8 @@ packages:
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
     dev: true
 
-  /webpack-dev-server@4.13.1(webpack-cli@5.0.2)(webpack@5.78.0):
-    resolution: {integrity: sha512-5tWg00bnWbYgkN+pd5yISQKDejRBYGEw15RaEEslH+zdbNDxxaZvEAO2WulaSaFKb5n3YG8JXsGaDsut1D0xdA==}
+  /webpack-dev-server@4.13.3(webpack-cli@5.0.2)(webpack@5.78.0):
+    resolution: {integrity: sha512-KqqzrzMRSRy5ePz10VhjyL27K2dxqwXQLP5rAKwRJBPUahe7Z2bBWzHw37jeb8GCPKxZRO79ZdQUAPesMh/Nug==}
     engines: {node: '>= 12.13.0'}
     hasBin: true
     peerDependencies:
@@ -3993,7 +3993,7 @@ packages:
       sockjs: 0.3.24
       spdy: 4.0.2
       webpack: 5.78.0(@swc/core@1.3.42)(webpack-cli@5.0.2)
-      webpack-cli: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
+      webpack-cli: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
       webpack-dev-middleware: 5.3.3(webpack@5.78.0)
       ws: 8.13.0
     transitivePeerDependencies:
@@ -4049,7 +4049,7 @@ packages:
       tapable: 2.2.1
       terser-webpack-plugin: 5.3.3(@swc/core@1.3.42)(webpack@5.78.0)
       watchpack: 2.4.0
-      webpack-cli: 5.0.2(webpack-dev-server@4.13.1)(webpack@5.78.0)
+      webpack-cli: 5.0.2(webpack-dev-server@4.13.3)(webpack@5.78.0)
       webpack-sources: 3.2.3
     transitivePeerDependencies:
       - '@swc/core'
