@@ -43,8 +43,8 @@ devDependencies:
     specifier: 5.5.1
     version: 5.5.1(webpack@5.82.1)
   mini-css-extract-plugin:
-    specifier: 2.7.5
-    version: 2.7.5(webpack@5.82.1)
+    specifier: 2.7.6
+    version: 2.7.6(webpack@5.82.1)
   postcss:
     specifier: 8.4.23
     version: 8.4.23
@@ -2494,8 +2494,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /mini-css-extract-plugin@2.7.5(webpack@5.82.1):
-    resolution: {integrity: sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==}
+  /mini-css-extract-plugin@2.7.6(webpack@5.82.1):
+    resolution: {integrity: sha512-Qk7HcgaPkGG6eD77mLvZS1nmxlao3j+9PkrT9Uc7HAE1id3F41+DdBRYRYkbyfNRGzm8/YWtzhw7nVPmwhqTQw==}
     engines: {node: '>= 12.13.0'}
     peerDependencies:
       webpack: ^5.0.0
