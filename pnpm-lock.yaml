@@ -44,8 +44,8 @@ devDependencies:
     specifier: 5.0.1
     version: 5.0.1(webpack@5.89.0)
   html-webpack-plugin:
-    specifier: 5.5.4
-    version: 5.5.4(webpack@5.89.0)
+    specifier: 5.6.0
+    version: 5.6.0(webpack@5.89.0)
   mini-css-extract-plugin:
     specifier: 2.7.6
     version: 2.7.6(webpack@5.89.0)
@@ -2045,11 +2045,17 @@ packages:
       terser: 5.17.1
     dev: true
 
-  /html-webpack-plugin@5.5.4(webpack@5.89.0):
-    resolution: {integrity: sha512-3wNSaVVxdxcu0jd4FpQFoICdqgxs4zIQQvj+2yQKFfBOnLETQ6X5CDWdeasuGlSsooFlMkEioWDTqBv1wvw5Iw==}
+  /html-webpack-plugin@5.6.0(webpack@5.89.0):
+    resolution: {integrity: sha512-iwaY4wzbe48AfKLZ/Cc8k0L+FKG6oSNRaZ8x5A/T/IVDGyXcbHncM9TdDa93wn0FsSm82FhTKW7f3vS61thXAw==}
     engines: {node: '>=10.13.0'}
     peerDependencies:
+      '@rspack/core': 0.x || 1.x
       webpack: ^5.20.0
+    peerDependenciesMeta:
+      '@rspack/core':
+        optional: true
+      webpack:
+        optional: true
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
