@@ -18,7 +18,7 @@ dependencies:
 devDependencies:
   '@nuxt/friendly-errors-webpack-plugin':
     specifier: ^2.5.2
-    version: 2.5.2(webpack@5.90.3)
+    version: 2.6.0(webpack@5.90.3)
   '@swc/cli':
     specifier: 0.3.9
     version: 0.3.9(@swc/core@1.4.2)
@@ -219,14 +219,14 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@nuxt/friendly-errors-webpack-plugin@2.5.2(webpack@5.90.3):
-    resolution: {integrity: sha512-LLc+90lnxVbpKkMqk5z1EWpXoODhc6gRkqqXJCInJwF5xabHAE7biFvbULfvTRmtaTzAaP8IV4HQDLUgeAUTTw==}
-    engines: {node: '>=8.0.0', npm: '>=5.0.0'}
+  /@nuxt/friendly-errors-webpack-plugin@2.6.0(webpack@5.90.3):
+    resolution: {integrity: sha512-3IZj6MXbzlvUxDncAxgBMLQwGPY/JlNhy2i+AGyOHCAReR5HcBxYjVRBvyaKM9R3s5k4OODYKeHAbrToZH/47w==}
+    engines: {node: '>=14.18.0', npm: '>=5.0.0'}
     peerDependencies:
       webpack: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
       chalk: 2.4.2
-      consola: 2.15.3
+      consola: 3.2.3
       error-stack-parser: 2.1.4
       string-width: 4.2.3
       webpack: 5.90.3(@swc/core@1.4.2)(webpack-cli@5.1.4)
@@ -1242,10 +1242,6 @@ packages:
   /connect-history-api-fallback@2.0.0:
     resolution: {integrity: sha512-U73+6lQFmfiNPrYbXqr6kZ1i1wiRqXnp2nhMsINseWXO8lDau0LGEffJ8kQi4EjLZympVgRdvqjAgiZ1tgzDDA==}
     engines: {node: '>=0.8'}
-    dev: true
-
-  /consola@2.15.3:
-    resolution: {integrity: sha512-9vAdYbHj6x2fLKC4+oPH0kFzY/orMZyG2Aj+kNylHxKGJ/Ed4dpNyAQYwJOdqO4zdM7XpVHmyejQDcQHrnuXbw==}
     dev: true
 
   /consola@3.2.3:
