@@ -2,7 +2,7 @@
   "devDependencies": {
     "@nuxt/friendly-errors-webpack-plugin": "^2.5.2",
     "@swc/cli": "0.3.12",
-    "@swc/core": "1.5.2",
+    "@swc/core": "1.5.3",
     "@swc/helpers": "0.5.11",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
