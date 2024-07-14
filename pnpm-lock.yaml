@@ -24,10 +24,10 @@ devDependencies:
     version: 0.4.0(@swc/core@1.6.13)
   '@swc/core':
     specifier: 1.6.13
-    version: 1.6.13(@swc/helpers@0.5.11)
+    version: 1.6.13(@swc/helpers@0.5.12)
   '@swc/helpers':
-    specifier: 0.5.11
-    version: 0.5.11
+    specifier: 0.5.12
+    version: 0.5.12
   '@types/react':
     specifier: 18.3.3
     version: 18.3.3
@@ -258,7 +258,7 @@ packages:
         optional: true
     dependencies:
       '@mole-inc/bin-wrapper': 8.0.1
-      '@swc/core': 1.6.13(@swc/helpers@0.5.11)
+      '@swc/core': 1.6.13(@swc/helpers@0.5.12)
       '@swc/counter': 0.1.3
       commander: 8.3.0
       fast-glob: 3.2.11
@@ -359,7 +359,7 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core@1.6.13(@swc/helpers@0.5.11):
+  /@swc/core@1.6.13(@swc/helpers@0.5.12):
     resolution: {integrity: sha512-eailUYex6fkfaQTev4Oa3mwn0/e3mQU4H8y1WPuImYQESOQDtVrowwUGDSc19evpBbHpKtwM+hw8nLlhIsF+Tw==}
     engines: {node: '>=10'}
     requiresBuild: true
@@ -370,7 +370,7 @@ packages:
         optional: true
     dependencies:
       '@swc/counter': 0.1.3
-      '@swc/helpers': 0.5.11
+      '@swc/helpers': 0.5.12
       '@swc/types': 0.1.9
     optionalDependencies:
       '@swc/core-darwin-arm64': 1.6.13
@@ -389,8 +389,8 @@ packages:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
     dev: true
 
-  /@swc/helpers@0.5.11:
-    resolution: {integrity: sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==}
+  /@swc/helpers@0.5.12:
+    resolution: {integrity: sha512-KMZNXiGibsW9kvZAO1Pam2JPTDBm+KSHMMHWdsyI/1DbIZjT2A6Gy3hblVXUMEDvUAKq+e0vL0X0o54owWji7g==}
     dependencies:
       tslib: 2.6.2
     dev: true
@@ -4050,7 +4050,7 @@ packages:
       '@swc/core': ^1.2.147
       webpack: '>=2'
     dependencies:
-      '@swc/core': 1.6.13(@swc/helpers@0.5.11)
+      '@swc/core': 1.6.13(@swc/helpers@0.5.12)
       '@swc/counter': 0.1.3
       webpack: 5.93.0(@swc/core@1.6.13)(webpack-cli@5.1.4)
     dev: true
@@ -4077,7 +4077,7 @@ packages:
         optional: true
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
-      '@swc/core': 1.6.13(@swc/helpers@0.5.11)
+      '@swc/core': 1.6.13(@swc/helpers@0.5.12)
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
