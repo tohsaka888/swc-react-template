@@ -2,8 +2,8 @@
   "devDependencies": {
     "@nuxt/friendly-errors-webpack-plugin": "^2.5.2",
     "@swc/cli": "0.4.0",
-    "@swc/core": "1.7.22",
-    "@swc/helpers": "0.5.12",
+    "@swc/core": "1.7.23",
+    "@swc/helpers": "0.5.13",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
     "autoprefixer": "10.4.20",
