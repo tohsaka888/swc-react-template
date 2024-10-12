@@ -5,7 +5,7 @@
     "@swc/core": "1.7.35",
     "@swc/helpers": "0.5.13",
     "@types/react": "18.3.11",
-    "@types/react-dom": "18.3.0",
+    "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
     "css-loader": "7.1.2",
     "css-minimizer-webpack-plugin": "7.0.0",
