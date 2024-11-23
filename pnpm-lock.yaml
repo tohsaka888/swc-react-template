@@ -54,13 +54,13 @@ devDependencies:
     version: 8.4.49
   postcss-loader:
     specifier: 8.1.1
-    version: 8.1.1(postcss@8.4.49)(typescript@5.6.3)(webpack@5.96.1)
+    version: 8.1.1(postcss@8.4.49)(typescript@5.7.2)(webpack@5.96.1)
   swc-loader:
     specifier: 0.2.6
     version: 0.2.6(@swc/core@1.9.3)(webpack@5.96.1)
   typescript:
-    specifier: 5.6.3
-    version: 5.6.3
+    specifier: 5.7.2
+    version: 5.7.2
   webpack:
     specifier: 5.96.1
     version: 5.96.1(@swc/core@1.9.3)(webpack-cli@5.1.4)
@@ -1339,7 +1339,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig@9.0.0(typescript@5.6.3):
+  /cosmiconfig@9.0.0(typescript@5.7.2):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1352,7 +1352,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      typescript: 5.6.3
+      typescript: 5.7.2
     dev: true
 
   /cross-spawn@7.0.3:
@@ -3038,7 +3038,7 @@ packages:
       postcss: 8.4.49
     dev: true
 
-  /postcss-loader@8.1.1(postcss@8.4.49)(typescript@5.6.3)(webpack@5.96.1):
+  /postcss-loader@8.1.1(postcss@8.4.49)(typescript@5.7.2)(webpack@5.96.1):
     resolution: {integrity: sha512-0IeqyAsG6tYiDRCYKQJLAmgQr47DX6N7sFSWvQxt6AcupX8DIdmykuk/o/tx0Lze3ErGHJEp5OSRxrelC6+NdQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
@@ -3051,7 +3051,7 @@ packages:
       webpack:
         optional: true
     dependencies:
-      cosmiconfig: 9.0.0(typescript@5.6.3)
+      cosmiconfig: 9.0.0(typescript@5.7.2)
       jiti: 1.21.0
       postcss: 8.4.49
       semver: 7.5.4
@@ -4067,8 +4067,8 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  /typescript@5.7.2:
+    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true
